@@ -1,0 +1,204 @@
+<html>
+<head>
+<style>
+    input{
+       height: 150px;
+       width: 700px;
+       text-align: center;
+       font-size: 30px;
+    }
+    button{
+        width: 300px;
+        height: 150px;
+        font-size: 50px;
+    }
+</style>
+</head>
+<center>
+<body>
+    <input type="text" id="input" placeholder="Special Character Test">
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="detect()">Validate</button>
+    <br>
+    <p id="result para"></p>
+    <br>
+    <p id="link para"></p>
+</center>
+</body>
+<script>
+    function detect(){
+    var i = 0;
+    var input = document.getElementById("input").value;
+    var inputChars = input.split("");
+    var exclamation = "!";
+    var rate = "@";
+    var hash = "#";
+    var dollar = "$";
+    var percent = "%";
+    var upArrow = "^";
+    var ampersand = "&";
+    var star = "*";
+    var bracketOpen = "(";
+    var bracketClose = ")";
+    var hyphen = "-";
+    var underScore = "_";
+    var plus = "+";
+    var equalTo = "=";
+    var sqBracketOpen = "[";
+    var sqBracketClose = "]";
+    var curlyOpen = "{";
+    var curlyClose = "}";
+    var pole = "|";
+    var colon = ":";
+    var semiColon = ";";
+    var doubleQuotes = '""';
+    var singleQuotes = "''";
+    var angularOpen = "<";
+    var angularClose = ">";
+    var comma = ",";
+    var period = ".";
+    var questionMark = "?";
+
+    var specialChars = ["!","@","#","$","%","^","&","*","(",")",
+    "-","_","+","=","{","}","[","]","|",":",";","'",'"',",",".","<",">","?"];
+
+        if(!input){
+            alert("Please fill the field first");
+        }
+
+        if(input){
+
+     if(inputChars.includes(specialChars[0])){
+        alert('You are not allowed to enter special characters in the field and you have entered an exclamation mark(!)');
+        i++;
+    }
+
+   else if(inputChars.includes(specialChars[1])){
+        alert("You are not allowed to enter special characters in the field and you have entered an at the rate sign(@)");
+        i++ ;
+    }
+
+    else if(inputChars.includes(specialChars[2])){
+        alert("You are not allowed to enter special characters in the field and you have entered a hash(#)");
+    i++ ;
+    }
+
+    else if(inputChars.includes(specialChars[3])){
+        alert("You are not allowed to enter special characters in the field and you have entered a dollar sign($)");
+        i++ ;
+    }
+
+    else if(inputChars.includes(specialChars[4])){
+        alert("You are not allowed to enter special characters in the field and you have entered a percent sign(%)");
+        i++ ;
+    }
+
+    else if(inputChars.includes(specialChars[5])){
+        alert("You are not allowed to enter special characters in the field and you have entered a (^)");
+        i++ ;
+    }
+
+    else if(inputChars.includes(specialChars[6])){
+        alert("You are not allowed to enter special characters in the field and you have entered an ampersand(&)");
+        i++ ;
+    }
+
+    else if(inputChars.includes(specialChars[7])){
+        alert("You are not allowed to enter special characters in the field and you have entered an asterisk(*)");
+        i++ ;
+    }
+    else if(inputChars.includes(specialChars[8])){
+        alert("You are not allowed to enter special characters in the field and you have entered a bracket open [ ( ]");
+        i++ ;
+    }
+    else if(inputChars.includes(specialChars[9])){
+        alert("You are not allowed to enter special characters in the field and you have entered a bracket close [ ) ]");
+        i++ ;
+    }
+    else if(inputChars.includes(specialChars[10])){
+        alert("You are not allowed to enter special characters in the field and you have entered a hyphen(-)");
+        i++ ;
+    }
+    else if(inputChars.includes(specialChars[11])){
+        alert("You are not allowed to enter special characters in the field and you have entered an underscore (_)");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[12])){
+        alert("You are not allowed to enter special characters in the field and you have entered a plus(+)");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[13])){
+        alert("You are not allowed to enter special characters in the field and you have entered an equal to(=)");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[14])){
+        alert("You are not allowed to enter special characters in the field and you have entered curly braces open ( { )")
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[15])){
+        alert("You are not allowed to enter special characters in the field and you have entered curly braces close ( } )");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[16])){
+        alert("You are not allowed to enter special characters in the field and you have entered square brackets open ( [ )");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[17])){
+        alert("You are not allowed to enter special characters in the field and you have entered square brackets close ( ] )");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[18])){
+        alert("You are not allowed to enter special characters in the field and you have entered a '|'");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[19])){
+        alert("You are not allowed to enter special characters in the field and you have entered a colon(:)");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[20])){
+        alert("You are not allowed to enter special characters in the field and you have entered a semi-colon(;)");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[21])){
+        alert("You are not allowed to enter special characters in the field and you have entered single quotes('')");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[22])){
+        alert('You are not allowed to enter special characters in the field and you have entered double quotes("")')
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[23])){
+        alert("You are not allowed to enter special characters in the field and you have entered a comma(,)");
+    i++ ;
+    }
+        else if(inputChars.includes(specialChars[0])){
+            alert("You are not allowed to enter special characters in the field and you have entered a period(.)");
+           i++ ;
+        }
+    else if(inputChars.includes(specialChars[24])){
+        alert("You are not allowed to enter special characters in the field and you have entered angular brackets open (<)");
+    i++ ;
+    }
+    else if(inputChars.includes(specialChars[25])){
+     i++ ;
+        alert("You are not allowed to enter special characters in the field and you have entered angular brackets close (>)");
+    }
+    else if(inputChars.includes(specialChars[26])){
+      i++ ;
+        alert("You are not allowed to enter special characters in the field and you have entered a question mark(?)");
+    }
+    else{
+        document.write('<center><h1>'+"Validation successful! Click on the link below to proceed"+'<br> <a href="nextPage.html">Link</a>'+'</h1></center>');
+       // document.getElementById("result para").innerHTML = ("");
+       // document.getElementById("link para").innerHTML = ('<a href="nextPage.html">Link</a>');
+    }
+
+    console.log(i);
+        }
+
+}
+</script>
+</html>
